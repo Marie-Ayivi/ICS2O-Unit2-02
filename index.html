@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="script.js"></script>
+    <title>Buttons</title>
+  </head>
+  <body>
+    <img id="image" src="./image/landscape.png"></img>
+    <button onclick="document.getElementById( 'image' ).src='./image/plaines.png'">Change image</button>
+    <p id="para">This is my awesome paragraph.</p>
+    <p2>This is my new paragraph</p2>
+    <button onclick="document.getElementById( 'para' ).innerHTML = 'New Paragrph'">Change text</button>
+    <button onclick="myFunction()">Click me</button>
+
+    <p id="click"></p>
+
+   <script>
+   function myFunction() {
+     document.getElementById("click").innerHTML = "HEY!";
+}
+  </script>
+  <p id="color" onclick="myFunction()">Surprise</p>
+
+<script>
+function myFunction() {
+  document.getElementById("color").style.backgroundColor = "red";
+}
+</script>
+
+  </body>
+</html>
